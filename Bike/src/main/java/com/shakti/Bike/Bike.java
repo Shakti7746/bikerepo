@@ -1,13 +1,11 @@
-package com.shakti.Bike.entity;
+package com.shakti.Bike;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Bike {
 	private int id;
 	private String name;
-	private String state;
-	
-	public Bike() {
-		
-	}
 	public int getId() {
 		return id;
 	}
@@ -20,12 +18,11 @@ public class Bike {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getState() {
-		return state;
+	@Override
+	public String toString() {
+		return "Bike [id=" + id + ", name=" + name + "]";
 	}
-	public void setState(String state) {
-		this.state = state;
-	}
+	
 	
 
 }
