@@ -1,8 +1,10 @@
 package com.shakti.Bike;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope(value = "prototype")
 public class Bike {
 	private int id;
 	private String name;
