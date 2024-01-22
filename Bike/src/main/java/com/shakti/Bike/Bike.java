@@ -24,7 +24,4 @@ public class Bike {
 	public String toString() {
 		return "Bike [id=" + id + ", name=" + name + "]";
 	}
-	
-	
-
 }
